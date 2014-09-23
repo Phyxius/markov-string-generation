@@ -1,0 +1,859 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"curerw",
+				"currentStartingRow"
+			],
+			[
+				"Pi",
+				"PIXEL_SIZE"
+			],
+			[
+				"PI",
+				"PIXEL_SIZE"
+			],
+			[
+				"OUTSE",
+				"OUTER_CIRCLE_POINTS"
+			],
+			[
+				"OUT",
+				"OUTER_CIRCLE_POINTS"
+			],
+			[
+				"OU",
+				"OUTER_CIRCLE_POINTS"
+			],
+			[
+				"Run",
+				"RunSierpinskiFractalDemo"
+			],
+			[
+				"UDP",
+				"UDP_PORT"
+			],
+			[
+				"SOC",
+				"SOCK_TABLE"
+			],
+			[
+				"paylo",
+				"payload"
+			],
+			[
+				"PROTO",
+				"PROTOCOL_HEADER_STRUCT_FORMAT"
+			],
+			[
+				"proto",
+				"protocol_header"
+			],
+			[
+				"prooto",
+				"PROTOCOL_HEADER"
+			],
+			[
+				"UD",
+				"UDP_PORT"
+			],
+			[
+				"unkn",
+				"UNKNOWN_TERMS"
+			],
+			[
+				"unk",
+				"unknownTerm"
+			],
+			[
+				"exce",
+				"except_on_error"
+			],
+			[
+				"servic",
+				"service_url"
+			],
+			[
+				"care",
+				"careerArray"
+			],
+			[
+				"profes",
+				"professionListPath"
+			],
+			[
+				"kno",
+				"knowledgeTypes"
+			],
+			[
+				"profe",
+				"professionsList"
+			],
+			[
+				"know",
+				"knowledgeType"
+			],
+			[
+				"Know",
+				"knowledgeType"
+			],
+			[
+				"profess",
+				"professionsList"
+			],
+			[
+				"draw",
+				"drawables"
+			],
+			[
+				"maina",
+				"maina	int main(char[][] args) { … }"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"project sa",
+				"Project: Save As"
+			],
+			[
+				"closep",
+				"Project: Close Project"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"sidbear",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"#",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"saveas",
+				"Project: Save As"
+			],
+			[
+				"projecas",
+				"Project: Save As"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"clsoe p",
+				"Project: Close Project"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"close proj",
+				"Project: Close Project"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add.",
+				"Git: Add..."
+			],
+			[
+				"conver tosp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conver to t",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convert to s",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"syntaxspeci",
+				"Preferences: Syntax Specific – User"
+			],
+			[
+				"markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"default",
+				"Preferences: Settings - Default"
+			],
+			[
+				"about",
+				"About"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"snip",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"qc",
+				"Git: Quick Commit"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"add..",
+				"Git: Add..."
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"javadoc",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"style",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"git add.",
+				"Git: Add..."
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"astyle",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"reform",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"snippenv",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"stats",
+				"Git: Status"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"addcur",
+				"Git: Add Current File"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"gitdiffcurrent",
+				"Git: Diff Current File"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"snip!",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"addc",
+				"Git: Add Current File"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"custom",
+				"Git: Custom Command"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"spell ",
+				"Google Spell Check"
+			],
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"statusb",
+				"View: Toggle Status Bar"
+			],
+			[
+				"stata",
+				"View: Toggle Status Bar"
+			],
+			[
+				"en",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"env",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"histo",
+				"Git: Commit history"
+			],
+			[
+				"git sta",
+				"Git: Stash Apply"
+			],
+			[
+				"p3",
+				"Set Syntax: Python3"
+			],
+			[
+				"s3",
+				"Set Syntax: Python3"
+			],
+			[
+				"stash",
+				"Git: Stash Changes"
+			],
+			[
+				"python3",
+				"Set Syntax: Python3"
+			],
+			[
+				"adc",
+				"Git: Add Current File"
+			],
+			[
+				"amn",
+				"Git: Amend Commit"
+			],
+			[
+				"amen",
+				"Git: Amend Commit"
+			],
+			[
+				"py",
+				"Set Syntax: Python3"
+			],
+			[
+				"ad",
+				"Git: Add Current File"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"histor",
+				"Git: Commit history"
+			],
+			[
+				"add cur",
+				"Git: Add Current File"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git add ",
+				"Git: Add Current File"
+			],
+			[
+				"pyto3",
+				"Set Syntax: Python3"
+			],
+			[
+				"add ",
+				"Git: Add Current File"
+			],
+			[
+				"ac",
+				"Git: Add Current File"
+			],
+			[
+				"am",
+				"Git: Amend Commit"
+			],
+			[
+				"git ",
+				"Git: Add Current File"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"toggle",
+				"View: Toggle Menu"
+			],
+			[
+				"status bar",
+				"View: Toggle Status Bar"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"reset wind",
+				"Reset to default Windows Transparency"
+			],
+			[
+				"increa",
+				"Increase Windows Transparency"
+			],
+			[
+				"transp",
+				"Increase Windows Transparency"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"packainsta",
+				"Package Control: Install Package"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"indedn",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indentat",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"side bar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"d",
+				"Set Syntax: D"
+			],
+			[
+				"force",
+				"Build: Force Rebuild"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"bui",
+				"Build: Build"
+			],
+			[
+				"buid",
+				"Build: Build"
+			],
+			[
+				"rema",
+				"Package Control: Remove Package"
+			],
+			[
+				"vbsc",
+				"Set Syntax: VBScript"
+			]
+		],
+		"width": 552.0
+	},
+	"console":
+	{
+		"height": 186.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 3/Gomoku.java",
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 3/Gomoku.class",
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 4/BankingTest.java",
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 3/lab3.sublime-project",
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 3/GomokuAI.java",
+		"/C/Users/Phyxius/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Phyxius/AppData/Roaming/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 2/Lab 2.sublime-project",
+		"/C/Users/Shea/AppData/Roaming/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/C/Users/Shea/AppData/Roaming/Sublime Text 3/Packages/User/Java.sublime-settings",
+		"/C/Users/Shea/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Shea/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 1/Visualizer.java",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/util.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/protocol.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/.gitignore",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/client.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/dummy-sorter-client.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/forwarder.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/server.sh",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/receiver.sh",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/nc.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/sorter.sh",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/sorter.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/README",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/LICENSE",
+		"/C/Users/Shea/Downloads/emanedemo-0.8.x.20130225-1/emanedemo-0.8.x/README.txt",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/dummy-sorter.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/setup.sh",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/server.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/pcat.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/getch.py",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Packet Flow Demo/VM Shared Folder/Data/man nc",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Paper/Concepts Matrix/out.csv",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Paper/Professions Matrix/skills.txt",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Paper/Professions Matrix/out.txt",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Paper/Professions Matrix/professions-list.txt",
+		"/C/Users/Shea/Dropbox/Work/SEAP 2014/Jayson - Paper/Professions Matrix/professions-list-real.txt",
+		"/C/Users/Shea/Documents/Work/SEAP/Catherine/Wiki URLs/download_wiki_articles.py",
+		"/C/Users/Shea/Documents/Work/SEAP/Jayson - Pings/Paper.lyx",
+		"/C/Users/Shea/Documents/Work/SEAP/Catherine/Wiki URLs/Archive/Robustness.html",
+		"/C/Users/Shea/Documents/Code/D/dreakout/source/constants.d",
+		"/C/Users/Shea/Documents/Code/D/Hello, D/hello-d-sfml/dub.json",
+		"/C/Users/Shea/Documents/Code/D/dreakout/dub.json",
+		"/C/Users/Shea/Documents/Code/D/Hello, D/hello-d-sfml/source/app.d",
+		"/C/Users/Shea/Documents/Keys/ssh.private",
+		"/D/syslinux.cfg",
+		"/C/Users/Shea/AppData/Roaming/Sublime Text 3/Packages/User/dub.sublime-build",
+		"/C/Users/Shea/Documents/Code/D/Hello, D/hellod.d",
+		"/C/Users/Shea/Documents/Code/Scripts/Wallpaper Rotations/San Diego Google Now/night.vbs"
+	],
+	"find":
+	{
+		"height": 81.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pause",
+			"NUM_POINTS_PER_CIRCLE",
+			"java",
+			".",
+			"getch",
+			"getch.py",
+			"UDP_PORT",
+			"&",
+			"\"",
+			"print",
+			"SOCK_DGRAM",
+			"sock",
+			"0x09F9",
+			":])\n",
+			"font",
+			"ImmutableSet",
+			"ImmutableSet\\((.+, ?.+?)\\)",
+			"ImmutableSet\\((.+, ?.+)\\)",
+			"ImmutableSet\\((.+, ?.+)\\).+",
+			"ImmutableSet\\((.+, ?.+)\\)",
+			"([\\w\\s.,]+)( \\(.*\\))?:(.+)",
+			")",
+			"([\\w\\s.,]+)( \\(.*\\))?:(.+)",
+			"([\\w\\s\\.\\,]+)( \\(.*\\))?:(.+)",
+			"([\\w\\s]+)( \\(.*\\))?:(.+\\)?)",
+			"([\\w\\s]+)( \\(.*\\))?:(.+)",
+			"reduce",
+			"print",
+			"next",
+			"sep",
+			" - ",
+			"()",
+			"leftpaddle",
+			".insert",
+			"[\\\\]([^\\\\])",
+			"[\\\\][^\\\\]",
+			"[\\\\]^[\\\\]",
+			"\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"read",
+			"POINTS_PER_CIRCLE",
+			"LISTEN_IP",
+			"",
+			"'",
+			"SOCK_STREAM",
+			"server_sock",
+			"sock",
+			"frozenset",
+			"{ \\1 ",
+			"{ \\1 }",
+			"{ \\2 }",
+			"\\1",
+			"",
+			"\\1",
+			"colsep",
+			"\\t",
+			"",
+			"leftPaddle",
+			".insertBack",
+			"\\\\\\2",
+			"\\\\\\1",
+			"\\\\(\\1)",
+			"\\\\\\1",
+			"\\\\"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 47.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 148.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 130.0
+	},
+	"project": "Lab 5.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"b",
+				"C:\\Users\\Shea\\Dropbox\\School\\UNM\\Freshman year\\CS 251\\Labs\\Lab 4\\BankAccount.java"
+			],
+			[
+				"mak",
+				"C:\\Users\\Shea\\Dropbox\\School\\UNM\\Freshman year\\CS 251\\Labs\\Lab 4\\make.sh"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"selected_items":
+		[
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 335.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
