@@ -15,17 +15,32 @@ public class StringChain {
 		iterator.forEachRemaining(new ItemsAdder());
 	}
 
+	public List<String> generate(int number, Random rand) {
+		LinkedList<String> previous = new LinkedList<>(Collections.nCopies(
+			order, ""));
+		ArrayList<String> returnList = new ArrayList<>();
+		for (; number > 0; number--) {
+			String s = markovTable.get(String.join(" ", previous))
+				.getNextStringRandomly(rand);
+			previous.addFirst(s);
+			previous.removeLast();
+			returnList.add(s);
+		}
+		return returnList;
+	}
+
 	private class ItemsAdder implements Consumer<String> {
 		private final LinkedList<String> previous = new LinkedList<>(
 			Collections.nCopies(order, ""));
 		public void accept(String s) {
-			String key = previous.stream().collect(Collectors.joining(" "));
+			String key = String.join(" ", previous);
 			if (!markovTable.containsKey(key)) {
 				markovTable.put(key, new ProbabilityMapping());
 			}
 			markovTable.get(key).add(s);
 			previous.removeLast();
 			previous.addFirst(s);
+
 		}
 	}
 
@@ -51,9 +66,13 @@ public class StringChain {
 			if (index >= getNumberOfSamples()) {
 				throw new IllegalArgumentException();
 			}
-			return probabilityMap.keySet().stream().flatMap(key -> 
-				Collections.nCopies(probabilityMap.get(key), key).stream())
-				.skip(index).findFirst().get();
+			return probabilityMap.keySet().stream()
+				.flatMap(key -> 
+					Collections.nCopies(probabilityMap.get(key), key).stream())
+				.skip(index)
+				.findFirst()
+				.get(); //don't have to worry about emptys because max size is
+						//already checked
 		}
 
 		public String getNextStringRandomly() {
