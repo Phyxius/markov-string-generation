@@ -12,20 +12,25 @@ public class StringChain {
 	}
 
 	public void addItems(Iterator<String> iterator) {
+		System.out.println("--Begin Adding Items--");
 		iterator.forEachRemaining(new ItemsAdder());
+		System.out.println("--End Adding Items--");
 	}
 
 	public List<String> generate(int number, Random rand) {
+		System.out.println("--Begin Generating Strings (" + number + ")--");
 		LinkedList<String> previous = new LinkedList<>(Collections.nCopies(
 			order, ""));
 		ArrayList<String> returnList = new ArrayList<>();
 		for (; number > 0; number--) {
 			String s = markovTable.get(String.join(" ", previous))
 				.getNextStringRandomly(rand);
-			previous.addFirst(s);
-			previous.removeLast();
+			System.out.println(s);
+			previous.addLast(s);
+			previous.removeFirst();
 			returnList.add(s);
 		}
+		System.out.println("--End Generating Strings--");
 		return returnList;
 	}
 
@@ -33,13 +38,16 @@ public class StringChain {
 		private final LinkedList<String> previous = new LinkedList<>(
 			Collections.nCopies(order, ""));
 		public void accept(String s) {
+			s = s.trim();
+			System.out.print(s + ": ");
 			String key = String.join(" ", previous);
 			if (!markovTable.containsKey(key)) {
 				markovTable.put(key, new ProbabilityMapping());
+				System.out.println(key);
 			}
 			markovTable.get(key).add(s);
-			previous.removeLast();
-			previous.addFirst(s);
+			previous.removeFirst();
+			previous.addLast(s);
 
 		}
 	}
