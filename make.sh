@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-javac -Werror *.java && java MarkovStringDemo
+javac -Werror -g -Xlint *.java && java MarkovStringDemo
