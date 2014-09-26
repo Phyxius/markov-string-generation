@@ -59,13 +59,13 @@ public class StringChain {
 
 	public class RandomStringSupplier implements Supplier<String> {
 		private final Random rand;
+		private LinkedList<String> previous = new LinkedList<>(
+			Collections.nCopies(order, ""));
 
 		public RandomStringSupplier(Random random) {
 			rand = random;
 		}
 
-		private LinkedList<String> previous = new LinkedList<>(
-			Collections.nCopies(order, ""));
 		public String get() {
 			String s = markovTable.get(String.join(" ", previous))
 					.getNextStringRandomly(rand);
