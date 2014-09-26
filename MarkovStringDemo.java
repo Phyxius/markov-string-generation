@@ -3,7 +3,7 @@ import java.util.*;
 /** Plays with StringChain with some hardcoded values. */
 public class MarkovStringDemo {
 
-	private static final int ORDER = 2;
+	private static final int ORDER = 1;
 	private static final int NUM_WORDS = 50;
 
 	/** Regular expression for breaking up words. */
