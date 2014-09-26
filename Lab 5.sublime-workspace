@@ -119,7 +119,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 147.0,
+		"height": 400.0,
 		"selected_items":
 		[
 			[
@@ -587,7 +587,7 @@
 				"Set Syntax: VBScript"
 			]
 		],
-		"width": 552.0
+		"width": 408.0
 	},
 	"console":
 	{
