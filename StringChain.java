@@ -94,16 +94,15 @@ public class StringChain {
             if (index >= getNumberOfSamples()) {
                 throw new IllegalArgumentException();
             }
-
-            //this is actually nearly as memory-efficient as doing it the
-            //'proper' weighted way due to the lazy nature of Streams. 
-            return probabilityMap.keySet().stream()
-                .flatMap(key -> 
-                    Collections.nCopies(probabilityMap.get(key), key).stream())
-                .skip(index)
-                .findFirst()
-                .get(); //don't have to worry about empty optionals because max 
-                        //size is checked for
+            LinkedHashMap copy = new LinkedHashMap<>(probabilityMap);
+            for(String key : probabilityMap.keySet()) {
+                index -= probabilityMap.get(key);
+                if (index <= 0) {
+                    return key;
+                }
+            }
+            throw new RuntimeException(); //should never happen because of
+                //earlier bounds checking
         }
 
         public String getNextStringRandomly() {
