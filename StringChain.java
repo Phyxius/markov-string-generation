@@ -39,7 +39,7 @@ public class StringChain {
         private final LinkedList<String> previous = new LinkedList<>(
             Collections.nCopies(order, ""));
         public void accept(String s) {
-            if (s.length > 1) {
+            if (s.length() > 1) {
                 s = s.trim();
             }
             List<String> key = Collections.unmodifiableList(
@@ -119,6 +119,36 @@ public class StringChain {
         public String getNextStringRandomly(Random rand) {
             return getNextStringByIndex(
                 rand.nextInt(getNumberOfSamples()));
+        }
+    }
+
+    class MarkovKey {
+        private final LinkedList<String> prefixes;
+
+        public MarkovKey() {
+            this(Collections.nCopies(order, ""));
+        }
+        public MarkovKey(Collection<String> clone) {
+            prefixes = new LinkedList<>(clone);
+        }
+        public MarkovKey(Collection<String> previous, String next) {
+            this(previous);
+            prefixes.addLast(next);
+            prefixes.removeFirst(); 
+        }
+        public MarkovKey getNext(String next) {
+            return new MarkovKey(prefixes, next);
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            return o.getClass().equals(getClass()) && 
+                ((MarkovKey)o).prefixes.equals(prefixes);
+        }
+
+        @Override
+        public int hashCode() {
+            return prefixes.hashCode() ^ 0x31337;
         }
     }
 }
