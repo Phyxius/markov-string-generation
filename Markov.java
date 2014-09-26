@@ -22,30 +22,30 @@ public class Markov {
     public static void main(String[] args) {
 
         // Parse the arguments
-	int order = Integer.parseInt(args[0]);
-	int count = Integer.parseInt(args[1]);
-	String regex = WORD_REGEX;
-	if(args[2].equalsIgnoreCase("char")) {
-	    regex = CHAR_REGEX;
-	}
-	        
-	Random rand = new Random();
-	
-        // Create chain of desired order	
-	StringChain chain = new StringChain(order);
+    int order = Integer.parseInt(args[0]);
+    int count = Integer.parseInt(args[1]);
+    String regex = WORD_REGEX;
+    if(args[2].equalsIgnoreCase("char")) {
+        regex = CHAR_REGEX;
+    }
+            
+    Random rand = new Random();
+    
+        // Create chain of desired order    
+    StringChain chain = new StringChain(order);
 
         // Read each file and add it to the chain
-	for(int i = 3; i < args.length; ++i) {
-	    String file = args[i];
+    for(int i = 3; i < args.length; ++i) {
+        String file = args[i];
 
             addFile(chain, regex, Paths.get(file));
-	}
+    }
 
         // Generate and print out desired amount of output
-	for(String s : chain.generate(count, rand)) {
-	    System.out.print(s);
-	}
-	System.out.println();
+    for(String s : chain.generate(count, rand)) {
+        System.out.print(s);
+    }
+    System.out.println();
     }
 
     /**
@@ -63,7 +63,7 @@ public class Markov {
 
           // Scanner implements Iterator<String>, so this works
           chain.addItems(sc);          
-	} catch (IOException ex) {
+    } catch (IOException ex) {
           ex.printStackTrace();
         }
     }
