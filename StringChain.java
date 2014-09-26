@@ -61,8 +61,7 @@ public class StringChain {
         public String get() {
             String s;
             do {
-                s = markovTable.get(key)
-                    .getNextStringRandomly(rand);
+                s = markovTable.get(key).getNextStringRandomly(rand);
                 key = key.getNext(s);
             }
             while (s.equals(""));
