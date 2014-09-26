@@ -4,8 +4,8 @@ import java.util.function.*;
 
 public class StringChain {
     private final int order;
-    private final HashMap<List<String>, ProbabilityMapping> markovTable = 
-        new HashMap<>(); //Lists have a well-defined .equals() as of Java 1.7
+    private final HashMap<MarkovKey, ProbabilityMapping> markovTable = 
+        new HashMap<>();
 
     public StringChain(int order) {
         this.order = order;
@@ -36,41 +36,34 @@ public class StringChain {
     }
 
     private class ItemsAdder implements Consumer<String> {
-        private final LinkedList<String> previous = new LinkedList<>(
-            Collections.nCopies(order, ""));
+        private MarkovKey key = new MarkovKey();
         public void accept(String s) {
             if (s.length() > 1) {
                 s = s.trim();
             }
-            List<String> key = Collections.unmodifiableList(
-                new ArrayList<>(previous));
             if (!markovTable.containsKey(key)) {
                 markovTable.put(key, new ProbabilityMapping());
             }
             markovTable.get(key).add(s);
-            previous.removeFirst();
-            previous.addLast(s);
-            System.out.printf("%s -> %s\n", key, s);
+            //System.out.printf("%s -> [%s]\n", key, s);
+            key = key.getNext(s);
         }
     }
 
     public class RandomStringSupplier implements Supplier<String> {
         private final Random rand;
-        private LinkedList<String> previous = new LinkedList<>(
-            Collections.nCopies(order, ""));
+        private MarkovKey key = new MarkovKey();
 
         public RandomStringSupplier(Random random) {
             rand = random;
         }
 
         public String get() {
-            System.out.println(previous);
             String s;
             do {
-                s = markovTable.get(previous)
+                s = markovTable.get(key)
                     .getNextStringRandomly(rand);
-                previous.addLast(s);
-                previous.removeFirst();
+                key = key.getNext(s);
             }
             while (s.equals(""));
             return s;
@@ -101,6 +94,7 @@ public class StringChain {
             if (index >= getNumberOfSamples()) {
                 throw new IllegalArgumentException();
             }
+
             //this is actually nearly as memory-efficient as doing it the
             //'proper' weighted way due to the lazy nature of Streams. 
             return probabilityMap.keySet().stream()
@@ -136,19 +130,25 @@ public class StringChain {
             prefixes.addLast(next);
             prefixes.removeFirst(); 
         }
+
         public MarkovKey getNext(String next) {
             return new MarkovKey(prefixes, next);
         }
 
         @Override
         public boolean equals(Object o) {
-            return o.getClass().equals(getClass()) && 
+            return o != null && o.getClass().equals(getClass()) && 
                 ((MarkovKey)o).prefixes.equals(prefixes);
         }
 
         @Override
         public int hashCode() {
             return prefixes.hashCode() ^ 0x31337;
+        }
+
+        @Override
+        public String toString() {
+            return prefixes.toString();
         }
     }
 }

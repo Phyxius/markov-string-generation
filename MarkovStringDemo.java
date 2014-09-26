@@ -20,7 +20,7 @@ public class MarkovStringDemo {
 
 		String regex = WORD_REGEX;
 
-		String demoString = "I am not a number! I am a free man! ";
+		String demoString = "I am not a number! I am a free man!";
 
 		System.out.println("Initial String: " + demoString);
 
@@ -45,7 +45,7 @@ public class MarkovStringDemo {
 		System.out.println();
 
 	// Now let's add another sequence to the same chain
-		String anotherStr = "They are the eggmen. I am the walrus. ";
+		String anotherStr = "They are the eggmen. I am the walrus.";
 		System.out.println("Another string: " + anotherStr);
 		
 		chain.addItems(new Scanner(anotherStr).useDelimiter(regex));
