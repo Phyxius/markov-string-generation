@@ -6,7 +6,7 @@ import java.util.function.*;
 public class StringChain {
 	private final int order;
 	private final HashMap<List<String>, ProbabilityMapping> markovTable = 
-		new HashMap<>();
+		new HashMap<>(); //Lists have a well-defined .equals() as of Java 1.7
 
 	public StringChain(int order) {
 		this.order = order;
