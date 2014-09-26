@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"rnadom",
+				"Random"
+			],
+			[
+				"Ranodm",
+				"RandomStringSupplier"
+			],
+			[
 				"curerw",
 				"currentStartingRow"
 			],
@@ -115,6 +123,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "MarkovStringDemo.java",
+			"settings":
+			{
+				"buffer_size": 1730,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "StringChain.java",
+			"settings":
+			{
+				"buffer_size": 3497,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "make.sh",
+			"settings":
+			{
+				"buffer_size": 68,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -122,6 +154,42 @@
 		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"add..",
+				"Git: Add..."
+			],
+			[
+				"amend",
+				"Git: Amend Commit"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"ad..",
+				"Git: Add..."
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
 			[
 				"project sa",
 				"Project: Save As"
@@ -207,10 +275,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"project",
-				"Project: Add Folder"
-			],
-			[
 				"syntaxspeci",
 				"Preferences: Syntax Specific – User"
 			],
@@ -221,14 +285,6 @@
 			[
 				"user",
 				"Preferences: Settings - User"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"default",
@@ -263,20 +319,8 @@
 				"Git: Commit"
 			],
 			[
-				"add..",
-				"Git: Add..."
-			],
-			[
-				"comm",
-				"Git: Commit"
-			],
-			[
 				"javadoc",
 				"Set Syntax: JavaDoc"
-			],
-			[
-				"commi",
-				"Git: Commit"
 			],
 			[
 				"style",
@@ -606,8 +650,13 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/Phyxius/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 5"
+	],
 	"file_history":
 	[
+		"/C/Users/Phyxius/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 5/StringChain.java",
 		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 3/Gomoku.java",
 		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 3/Gomoku.class",
 		"/C/Users/Shea/Dropbox/School/UNM/Freshman year/CS 251/Labs/Lab 4/BankingTest.java",
@@ -661,7 +710,7 @@
 	],
 	"find":
 	{
-		"height": 81.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -677,6 +726,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"print",
+			"Rna",
 			"pause",
 			"NUM_POINTS_PER_CIRCLE",
 			"java",
@@ -757,8 +808,99 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "MarkovStringDemo.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1141,
+								1141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "StringChain.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1786,
+								1786
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "make.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -850,7 +992,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 335.0,
 	"status_bar_visible": true,
 	"template_settings":
