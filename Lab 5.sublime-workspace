@@ -135,7 +135,7 @@
 			"file": "StringChain.java",
 			"settings":
 			{
-				"buffer_size": 3497,
+				"buffer_size": 3550,
 				"line_ending": "Windows"
 			}
 		},
@@ -833,7 +833,7 @@
 							"syntax": "Packages/Java/Java.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -846,15 +846,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3497,
+						"buffer_size": 3550,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1786,
-								1786
+								1648,
+								1648
 							]
 						],
 						"settings":
@@ -867,7 +867,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

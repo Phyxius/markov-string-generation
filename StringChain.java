@@ -2,151 +2,45 @@ import java.util.*;
 import java.util.stream.*;
 import java.util.function.*;
 
-public class StringChain {
-    private final int order;
-    private final HashMap<MarkovKey, ProbabilityMapping> markovTable = 
-        new HashMap<>();
+public class StringChain extends MarkovChain<String> {
+	public StringChain(int order) {
+		super(order, "");
+	}
 
-    public StringChain(int order) {
-        this.order = order;
-    }
+	@Override 
+	public Stream<String> getRandomTStream(Random rand) {
+		return super.getRandomTStream(rand).map(s -> s + " ");
+	}
+	
+	@Override
+	public void addItems(Iterator<String> iterator) {
+		super.addItems(new IteratorMapper<String>(iterator, 
+			s -> s.length() > 1 ? s.trim() : s)); //trim spaces from strings
+				//but not from single characters
+	}
 
-    public void addItems(Iterator<String> iterator) {
-        System.out.println("--Begin Adding Items--");
-        ItemsAdder adder = new ItemsAdder();
-        iterator.forEachRemaining(adder);
-        Collections.nCopies(order, "").iterator().forEachRemaining(adder);
-        System.out.println("--End Adding Items--");
-    }
+	private class IteratorMapper<T> implements Iterator<T> {
+		private final Iterator<T> wrapped;
+		private final Function<T,T> mapFunction;
+		public IteratorMapper(Iterator<T> wrapped, 
+				Function<T,T> mapFunction) {
+			this.wrapped = wrapped;
+			this.mapFunction = mapFunction;
+		}
 
-    public Stream<String> getRandomStringStream() {
-        return getRandomStringStream(new Random());
-    }
+		@Override
+		public boolean hasNext() {
+			return wrapped.hasNext();
+		}
 
-    public Stream<String> getRandomStringStream(Random rand) {
-        return Stream.generate(new RandomStringSupplier(rand));
-    }
+		@Override
+		public T next() {
+			return mapFunction.apply(wrapped.next());
+		}
 
-    public List<String> generate(int number, Random rand) {
-        System.out.println("--Begin Generating Strings (" + number + ")--");
-        return getRandomStringStream()
-            .limit(number)
-            .map(s -> s + " ")
-            .collect(Collectors.toList());
-    }
-
-    private class ItemsAdder implements Consumer<String> {
-        private MarkovKey key = new MarkovKey();
-        public void accept(String s) {
-            if (s.length() > 1) {
-                s = s.trim();
-            }
-            if (!markovTable.containsKey(key)) {
-                markovTable.put(key, new ProbabilityMapping());
-            }
-            markovTable.get(key).add(s);
-            //System.out.printf("%s -> [%s]\n", key, s);
-            key = key.getNext(s);
-        }
-    }
-
-    public class RandomStringSupplier implements Supplier<String> {
-        private final Random rand;
-        private MarkovKey key = new MarkovKey();
-
-        public RandomStringSupplier(Random random) {
-            rand = random;
-        }
-
-        public String get() {
-            String s;
-            do {
-                s = markovTable.get(key).getNextStringRandomly(rand);
-                key = key.getNext(s);
-            }
-            while (s.equals(""));
-            return s;
-        }
-    }
-
-    private class ProbabilityMapping {
-        //LinkedHashMap so that getNextStringByIndex has a deterministic output
-        private final LinkedHashMap<String, Integer> probabilityMap = 
-            new LinkedHashMap<>();
-        private int totalValues;
-
-        public void add(String s) {
-            if (probabilityMap.containsKey(s)) {
-                probabilityMap.put(s, probabilityMap.get(s) + 1);
-            }
-            else {
-                probabilityMap.put(s, 1);
-            }
-
-            totalValues += 1;
-        }
-        public int getNumberOfSamples() {
-            return totalValues;
-        }
-
-        public String getNextStringByIndex(int index) { //0 based
-            if (index >= getNumberOfSamples()) {
-                throw new IllegalArgumentException();
-            }
-            LinkedHashMap copy = new LinkedHashMap<>(probabilityMap);
-            for(String key : probabilityMap.keySet()) {
-                index -= probabilityMap.get(key);
-                if (index <= 0) {
-                    return key;
-                }
-            }
-            throw new RuntimeException(); //should never happen because of
-                //earlier bounds checking
-        }
-
-        public String getNextStringRandomly() {
-            return getNextStringRandomly(new Random());
-        }
-
-        public String getNextStringRandomly(Random rand) {
-            return getNextStringByIndex(
-                rand.nextInt(getNumberOfSamples()));
-        }
-    }
-
-    class MarkovKey {
-        private final LinkedList<String> prefixes;
-
-        public MarkovKey() {
-            this(Collections.nCopies(order, ""));
-        }
-        public MarkovKey(Collection<String> clone) {
-            prefixes = new LinkedList<>(clone);
-        }
-        public MarkovKey(Collection<String> previous, String next) {
-            this(previous);
-            prefixes.addLast(next);
-            prefixes.removeFirst(); 
-        }
-
-        public MarkovKey getNext(String next) {
-            return new MarkovKey(prefixes, next);
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            return o != null && o.getClass().equals(getClass()) && 
-                ((MarkovKey)o).prefixes.equals(prefixes);
-        }
-
-        @Override
-        public int hashCode() {
-            return prefixes.hashCode() ^ 0x31337;
-        }
-
-        @Override
-        public String toString() {
-            return prefixes.toString();
-        }
-    }
+		@Override
+		public void remove() {
+			wrapped.remove();
+		}
+	}
 }
