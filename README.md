@@ -4,6 +4,7 @@ Java implementation of a Markov Chain-based generator of objects. Contains a ful
 
 You may use, distribute, etc. this code in accordance with the WTFPL, reproduced below:
 
+```
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
 
@@ -17,3 +18,4 @@ You may use, distribute, etc. this code in accordance with the WTFPL, reproduced
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
+```
