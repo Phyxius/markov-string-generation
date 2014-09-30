@@ -1,3 +1,14 @@
+/*
+ * Markov.java
+ * Copyright (c) Shea Polansky 2014.
+ * Purpose: Runs the StringChain class with the appropriate arguments.
+ * Created for Brooke Chenoweth's Intermediate Programming course.
+ * Slightly modified from Brooke's template, with the addition of a prefix
+ * variable, to be used to add spaces between generated words.
+ * Usage: java Markov ORDER OUTPUT_AMOUNT SPLIT_METHOD FILE1 FILE2...
+ * E.g.: java Markov 3 50 word twilight.txt sherlock_holmes.txt
+ */
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -47,15 +58,17 @@ public class Markov {
 
             addFile(chain, regex, Paths.get(file));
         }
-
-        // Generate and print out desired amount of output
+        //Begin modifications
         String delimiter = " ";
         if (regex.equals(CHAR_REGEX)) {
-            delimiter = "";
+            delimiter = ""; //don't add spaces after generated characters, but
+            //do add after words
         }
+        // Generate and print out desired amount of output
         for (String s : chain.generate(count, rand)) {
             System.out.print(s + delimiter);
         }
+        //End modifications
         System.out.println();
     }
 

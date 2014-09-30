@@ -1,5 +1,13 @@
+/*
+ * StringChain.java
+ * Copyright (c) Shea Polansky 2014.
+ * Purpose: Represents a Markov Chain String Generator.
+ * Created for Brooke Chenoweth's Intermediate Programming course.
+ * Usage: Use the Markov.java file included
+ * Note: This class uses Java 8 features
+ */
+
 import java.util.Iterator;
-import java.util.function.Function;
 
 public class StringChain extends MarkovChain<String> {
     public StringChain(int order) {
